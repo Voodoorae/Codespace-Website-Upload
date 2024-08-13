@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+<p>My First Paragraph</p>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 5 + 6;
+console.log("JS is great!");
+let sign = prompt("What's your sign?");
+name = "John";
+
+// printing name on the console
+console.log("Hello " + name);
+
+document.getElementById("myH").innerHTML = "My First Page";
+document.getElementById("myP").innerHTML = "My first paragraph.";
+
+// Check if the input is valid numbers
+if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
+  // Check if the second number is not zero 
+  if (secondNumber !== 0) {
+    // Perform the division
+    var result = firstNumber / secondNumber;
+
+    // Display the result to the user
+    alert("The result of " + firstNumber + " divided by " + secondNumber + " is: " + result);
+  } else {
+    alert("Error: Division by zero is not allowed.");
+  }
+} else {
+  alert("Invalid input. Please enter valid numbers.");
+}
+
+
+// Activity: check if the numbers are equal or different using else if (&& logical and true, !== not equal to)
+const firstNumber = prompt("2 ");
+const secondNumber = prompt("3: ");
+const thirdNumber = prompt("4: ");
+
+if (firstNumber === secondNumber && secondNumber === thirdNumber) {
+    console.log("All numbers are equal"); 
+} else if (firstNumber !== secondNumber && secondNumber !== thirdNumber && firstNumber !== thirdNumber) {
+    console.log("All numbers are different");
+} else {
+    console.log("Neither all are equal or different");
+}
+
+
+//loops
+//check if numbers are increasing or decreasing using else if (&& logical and true, < less than > more than)
+const firstNumber = prompt("1524: ");
+const secondNumber = prompt("2345: ");
+const thirdNumber = prompt("3321: ");
+
+if (firstNumber < secondNumber && secondNumber < thirdNumber) {
+  console.log("Increasing order");
+} else if (firstNumber > secondNumber && secondNumber > thirdNumber) {
+  console.log("Decreasing order");
+} else {
+  console.log("Neither increasing nor decreasing order");
+
+  //
+  let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+      sum += array[i];
+    }
+    return sum;
+  }
+  
+  const Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const result = sumArrayValues(Array);
+  console.log("Sum of the array elements:", result);
+
+//multiplication table activity
+let n= 6
+for (let i=1; i<=10; i++) {
+  console.log(n, "X", i, "=", n*i)
+
+}
+
+
+sign = window.prompt('Are you feeling lucky'); // open the window with Text "Are you feeling lucky"
+sign = window.prompt('Are you feeling lucky', 'sure'); // open the window with Text "Are you feeling lucky" and default value "sure"
+</script>
+
+</body>
+</html>
